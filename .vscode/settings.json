@@ -1,3 +1,4 @@
 {
-    "codeium.enableCommandSideHintEducation": true
+    "codeium.enableCommandSideHintEducation": true,
+    "workbench.editor.titleScrollbarVisibility": "visible"
 }
