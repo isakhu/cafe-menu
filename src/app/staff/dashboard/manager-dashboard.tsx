@@ -1,5 +1,4 @@
 import React from 'react';
-import { OrderCard, BookingCard, RequestCard } from './components/Cards';
 
 export default function ManagerDashboard() {
   return (
