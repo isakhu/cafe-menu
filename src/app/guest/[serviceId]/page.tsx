@@ -10,8 +10,9 @@ const SERVICES: Record<string, { name: string; type: 'orderable' | 'bookable' | 
   'restaurant': { name: 'Restaurant/Bar', type: 'orderable' },
 };
 
-export default function ServicePage({ params }: { params: { serviceId: string } }) {
-  const service = SERVICES[params.serviceId];
+export default async function ServicePage({ params }: { params: Promise<{ serviceId: string }> }) {
+  const { serviceId } = await params;
+  const service = SERVICES[serviceId];
 
   if (!service) {
     notFound();
